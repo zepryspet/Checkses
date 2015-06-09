@@ -27,7 +27,7 @@ say REPORT	'  <head> ';
 
 ##### Writing the CSS using Flexbox
 say REPORT	'    <style>';
-say REPORT	' 		.Protocols, .Services, .Policies, .Sources, Destinations{';
+say REPORT	' 		.Protocols, .Services, .Policies, .Sources, .Destinations{';
 say REPORT	' 			display: flex;';
 say REPORT	' 			align-items: center;';
 say REPORT	' 			justify-content: space-around;';
@@ -96,7 +96,7 @@ say REPORT	'         // Instantiate and draw our Top Sources IPS chart & table, 
 say REPORT	"         var chartDestination = new google.visualization.PieChart(document.getElementById(\'TopDestination\'));";
 say REPORT	'         chartDestination.draw(dataDestination, options);';
 say REPORT	"         var TableDestination = new google.visualization.Table(document.getElementById(\'TableDestination\'));";
-say REPORT	"         TableDestination.draw(dataSource, {showRowNumber: true});";
+say REPORT	"         TableDestination.draw(dataDestination, {showRowNumber: true});";
 
 ########## Creating  the HTML body and the needed divisions.
 say REPORT	'       }';
